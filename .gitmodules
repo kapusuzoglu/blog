@@ -1,0 +1,8 @@
+[submodule "public"]
+	path = public
+	url = https://github.com/kapusuzoglu/kapusuzoglu.github.io.git
+	branch = main
+[submodule "themes/blogTheme"]
+	path = themes/blogTheme
+	url = https://github.com/kapusuzoglu/blogTheme.git
+	branch = main

@@ -1,0 +1,121 @@
+title = "Berkcan Kapusuzoglu"
+languageCode = "en-us"
+baseurl = "https://kapusuzoglu.github.io/"
+theme = "blogTheme"
+# themesDir = "../.."
+
+author = "Berkcan Kapusuzoglu"
+copyright = "Copyright © 2023, Berkcan Kapusuzoglu, all rights reserved."
+
+pluralizelisttitles = false
+paginate = 10
+enableEmoji = true
+
+[Params]
+    name = "Berkcan Kapusuzoglu"
+    description = "Berkcan Kapusuzoglu"
+
+    github_user = "kapusuzoglu"
+    github_repo = "https://github.com/kapusuzoglu/kapusuzoglu.github.io"
+    github_banner = true
+
+    favicon = "favicon.ico"
+
+    # Title to be displayed in header
+    # headerTitle = 'kapusuzoglu@dev: ~/$'
+    headerTitle = 'Home'
+    # User image
+    titleImage = 'images/BK_Wedding.jpg'
+    # Copyright text displayed in footer
+    footerCopyrightText = 'Berkcan Kapusuzoglu 2023'
+
+# Favicons config
+# Get your favicons from https://realfavicongenerator.net/
+# Put them in the 'static' folder
+[Params.favicons]
+  appleTouchIcon = '/apple-touch-icon.png'
+  icon32 = '/favicon-32x32.png'
+  icon16 = '/favicon-16x16.png'
+  manifest = '/site.webmanifest'
+  maskIcon = '/safari-pinned-tab.svg'
+  msApplicationTileColor = '#5bbad5'
+  themeColor = '#ffffff'
+
+# Isso configuration
+# https://posativ.org/isso/docs/configuration/client/
+[Params.isso]
+  enabled = true
+  data = "https://comments.exmaple.com/"
+  id = "thread-id"
+  css = true
+  lang = "en"
+  replyToSelf = true
+  requireAuthor = true
+  requireEmail = false
+  avatar = true
+  avatar-bg = "#f0f0f0"
+  jsLocation = "https://comments.example.com/js/embed.min.js"
+
+# Umami configuration
+# https://umami.is/docs/install
+[Params.umami]
+  enabled = true
+  websiteId = "656b4467-2519-4994-8b05-c463bd25aee1"
+  jsLocation = "https://umami-pi-eight.vercel.app/script.js"
+
+# microformat2 h-card configuration
+# All params except 'fullName' are optional
+[Params.hcard]
+#   avatar = "/images/BK_Wedding.jpg"
+  fullName = "Berkcan Kapusuzoglu"
+  pronouns = [ "he", "him" ]
+  nickname = "beco"
+  showLocation = true
+  city = "My Town"
+  region = "My State"
+  country = "My Country"
+
+[Params.indieweb]
+  authorizationEndpoint = "https://indieauth.com/auth"
+  tokenEndpoint = "https://tokens.indieauth.com/token"
+
+[Params.webmention]
+  webmentionUrl = "https://webmention.io"
+  webmentionEndpoint = "/webmention"
+  webmentionPingbackEndpoint = "/xmlrcp"
+
+# Social icons to be displayed on the front page
+[[menu.social]]
+  name = "GitHub"
+  url = "https://github.com/kapusuzoglu"
+
+[[menu.social]]
+  name = "Twitter"
+  url = "https://twitter.com/Berkcan_K"
+
+[[menu.social]]
+  name = "Linkedin"
+  url = "https://www.linkedin.com/in/berkcankapusuzoglu/"
+
+[[menu.social]]
+  name = "Google"
+  url = "https://scholar.google.com/citations?user=iv1vNTYAAAAJ&hl=en"
+
+# [[menu.social]]
+#   name = "RSS"
+#   url = "https://scholar.google.com/citations?user=iv1vNTYAAAAJ&hl=en"
+
+# To make purging of CSS classes work in production
+[build]
+  writeStats = true
+
+# syntax highlight settings
+[markup]
+  [markup.highlight]
+    style = "dracula"
+
+[taxonomies]
+  category = "categories"
+
+[permalinks]
+  categories = "/:section/:slug"
